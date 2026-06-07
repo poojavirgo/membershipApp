@@ -1,0 +1,26 @@
+.card {
+  width: 100%;
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  text-align: left;
+  font-family: inherit;
+}
+
+.interactive {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.interactive:hover {
+  border-color: var(--teal);
+}
+
+.selected {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+}

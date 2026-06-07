@@ -1,0 +1,40 @@
+.wrap {
+  text-align: center;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--danger);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0 auto 12px;
+}
+
+.title {
+  margin: 0 0 6px;
+}
+
+.message {
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+
+.retry {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--teal);
+  color: #fff;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.retry:hover {
+  background: var(--teal-dark);
+}

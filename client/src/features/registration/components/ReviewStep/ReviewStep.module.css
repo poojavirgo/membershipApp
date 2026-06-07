@@ -1,0 +1,33 @@
+.review {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.dt {
+  color: var(--muted);
+}
+
+.dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin: 12px 0 0;
+}

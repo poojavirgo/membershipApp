@@ -1,0 +1,57 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+
+.code {
+  flex-shrink: 0;
+  padding: 11px 8px;
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  cursor: pointer;
+}
+
+.code:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.number {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.number:focus {
+  border-color: var(--teal);
+}
+
+.invalid {
+  border-color: var(--danger);
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.8rem;
+}

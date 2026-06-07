@@ -1,0 +1,47 @@
+.wizard {
+  display: block;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.primary,
+.ghost {
+  padding: 11px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--teal);
+  color: #fff;
+  border: none;
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--teal-dark);
+}
+
+.ghost {
+  background: #fff;
+  border: 2px solid var(--line);
+  color: var(--ink);
+  margin-right: auto;
+}
+
+.ghost:hover:not(:disabled) {
+  border-color: var(--muted);
+}
+
+.primary:disabled,
+.ghost:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

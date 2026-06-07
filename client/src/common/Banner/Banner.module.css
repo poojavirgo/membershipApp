@@ -1,0 +1,35 @@
+.banner {
+  text-align: center;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.info .icon {
+  background: var(--teal);
+}
+
+.success .icon {
+  background: var(--teal);
+}
+
+.error .icon {
+  background: var(--danger);
+}
+
+.title {
+  margin: 0 0 6px;
+}
+
+.message {
+  color: var(--muted);
+  margin: 0;
+}

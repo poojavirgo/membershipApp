@@ -1,0 +1,21 @@
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.checked {
+  border-color: var(--teal);
+}
+
+.checked::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--teal);
+}

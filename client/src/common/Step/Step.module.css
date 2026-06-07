@@ -1,0 +1,17 @@
+.step {
+  display: block;
+  margin-top: 24px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.description {
+  color: var(--muted);
+  margin: 0 0 24px;
+  text-align: center;
+}
