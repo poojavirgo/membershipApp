@@ -22,7 +22,6 @@ export const useForm = () => {
         res.ok ? res.json() : Promise.reject(new Error("Failed")),
       )
       .then((data) => {
-        // Map the API shape -> frontend MembershipForm
         const form: MembershipForm = {
           id: data.formId,
           title: data.title,

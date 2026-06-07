@@ -45,20 +45,14 @@ describe("Wizard (integration)", () => {
   it("walks through all three steps to the review screen", async () => {
     const user = userEvent.setup();
     render(<Wizard form={form} />);
-
-    // Step 1
     await user.click(screen.getByText("Active Member"));
     await user.click(screen.getByRole("button", { name: /continue/i }));
-
-    // Step 2
     await user.type(screen.getByLabelText(/first name/i), "Ada");
     await user.type(screen.getByLabelText(/last name/i), "Lovelace");
     await user.type(screen.getByLabelText(/email/i), "ada@example.com");
     await user.type(screen.getByLabelText(/phone number/i), "87654322");
     await user.type(screen.getByLabelText(/birth date/i), "1990-01-01");
     await user.click(screen.getByRole("button", { name: /continue/i }));
-
-    // Step 3 — review
     expect(screen.getByText(/review your registration/i)).toBeInTheDocument();
     expect(screen.getByText("ada@example.com")).toBeInTheDocument();
   });

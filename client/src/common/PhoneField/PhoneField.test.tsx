@@ -12,7 +12,6 @@ describe("PhoneField", () => {
     );
 
     await user.type(screen.getByLabelText("Phone"), "87654322");
-    // last call should be the full combined value (default code +47)
     expect(onChange).toHaveBeenLastCalledWith("+4787654322");
   });
 

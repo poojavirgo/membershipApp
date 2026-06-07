@@ -38,7 +38,6 @@ func (r Registration) Validate(validMemberTypeIDs map[string]bool) ValidationErr
 		errs["email"] = "Enter a valid email address."
 	}
 
-	// Phone: must start with + and contain 8–15 digits total (country code + number).
 	phone := strings.TrimSpace(r.Phone)
 	switch {
 	case phone == "":

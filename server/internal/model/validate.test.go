@@ -96,11 +96,11 @@ func TestValidate_Phone(t *testing.T) {
 		phone   string
 		wantErr bool
 	}{
-		{"+4787654322", false},  
-		{"+1234567", true},      
-		{"87654322", true},     
+		{"+4787654322", false}, 
+		{"+1234567", true},     
+		{"87654322", true}, 
 		{"+47876543221234567", true},
-		{"", true},    
+		{"", true},     
 	}
 	for _, c := range cases {
 		t.Run(c.phone, func(t *testing.T) {

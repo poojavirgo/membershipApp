@@ -48,8 +48,8 @@ describe("useWizard", () => {
   it("blocks advancing past details when fields are invalid", () => {
     const { result } = renderHook(() => useWizard(form));
     act(() => result.current.selectMemberType("mt1"));
-    act(() => result.current.goNext()); // -> details
-    act(() => result.current.goNext()); // invalid, should stay
+    act(() => result.current.goNext());
+    act(() => result.current.goNext());
     expect(result.current.step).toBe(STEP.DETAILS);
     expect(result.current.errors.email).toBeTruthy();
   });
